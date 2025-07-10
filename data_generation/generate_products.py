@@ -55,5 +55,5 @@ for _ in range(NUM_PRODUCTS):
     })
 
 df_products = pd.DataFrame(products)
-df_products.to_csv("products_raw.csv",index=False)
+df_products.to_csv("data_generation/raw_data/products_raw.csv",index=False)
 print("products_raw.csv file generated")

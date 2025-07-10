@@ -67,5 +67,5 @@ for _ in range(5):
 
 
 df_customers = pd.DataFrame(customers)
-df_customers.to_csv("customers_raw.csv",index=False)
+df_customers.to_csv("data_generation/raw_data/customers_raw.csv",index=False)
 print("customers_raw.csv file generated")
