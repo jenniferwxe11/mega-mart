@@ -1,0 +1,13 @@
+store_id,store_name,location,region,store_type
+86fafee1-799a-4d73-ad3e-c949284a5246,MegaMart North Judithbury,"819 Johnson Course, East William, AK 74064",Central,Physical Store
+c02baea7-34ac-4cb0-b3e1-b0916a8c9ebf,MegaMart Lake Debra,"9402 Peterson Drives, Port Matthew, CO 50298",Central,Physical Store
+275b32bb-da2a-4466-a325-019af89f21cb,MegaMart West Melanieview,"161 Calderon River Suite 931, Lake Jeremyport, CO 31013",South,Physical Store
+e5dab380-cad5-41d5-b869-511fe2d057eb,MegaMart South Joshuastad,"41928 Frank Light Suite 835, East Lydiamouth, MO 35594",North,Physical Store
+d81e02c8-cc01-499b-b0ca-68e0a457fb95,MegaMart East Robinshire,"76724 John Points Suite 969, Coxberg, NY 65187",North,Physical Store
+5c17a8f4-a89e-4249-b14e-010278962d40,MegaMart Port Brandonville,"691 James Mountain, Tashatown, TX 94967",North,Physical Store
+c972cfe7-7ead-4806-a953-c9961dcabbd6,MegaMart Lake Nicoleview,"46270 Stanton Track Apt. 814, East Nathaniel, GA 71198",Central,Physical Store
+ecd0c039-8652-41c1-bf3f-58bb34af0515,MegaMart New Mariotown,"3039 Christopher Oval Apt. 822, Arroyoburgh, KS 69664",West,Physical Store
+4c9db171-7173-4b17-b1b4-edf5136631e7,MegaMart Brandtside,"465 Lam Mission, East Jeffreymouth, AK 77611",Central,Physical Store
+5caa3acb-07e8-4825-8eb6-ebdd65ff29bb,MegaMart New Jeffrey,"10518 Joshua Oval, New David, FM 75348",West,Physical Store
+47cabd91-cfc0-4f8e-ad8f-f9261cb441c0,MegaMart Online,Online,Nationwide,Online Website
+fb8faf8a-33f8-4cbb-9a91-1f1290e7a88e,MegaMart App,Online,Nationwide,Mobile App

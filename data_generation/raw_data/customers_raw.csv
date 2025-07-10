@@ -1,0 +1,106 @@
+customer_id,name,email,gender,dob,loyalty_points,signup_date
+cf00525e-aba6-475a-86a6-cd9cb3892c14,Allison Hill, donaldgarcia@example.net,f,2000-03-26,4012,2024-11-03
+feb5ceb7-39da-4ae8-a25e-cc161e790bcc,Javier Johnson,jesseguzman@example.net,male,1953-01-19,True,14/04/2025
+86e561e3-0306-44ab-8674-fece79f7072f,Jennifer Cole, lisa02 example.net,Female,1968-04-12,True,2023-12-20
+419801cf-ae78-4552-b63f-54cb04fc887b,Daniel Gallagher,daviscolin@example.com,female,1980-08-08,N/A,2023-08-24
+da59e789-1456-4166-8294-f862e5bd29b9,Monica Herrera,smiller@example.net,,1981-08-11,106,"Jan 22, 2024"
+09fbc74c-6dbe-40da-b435-2535a1f8c48d,Michele Williams,kendragalloway@example.org,Female,1998-06-26,5514,2022-12-13
+00a42b1c-967c-45ae-a906-055fd80543e9,Jesse Flowers,mitchellclark@example.com,f,1987-04-12,N/A,2025-06-05
+c2e689c4-fad4-46a2-8655-724864172932,Lisa Jackson,frankgray@example.net,m,1986-05-08,True,21/11/2024
+350a7064-2418-4618-b8a5-16f7b22918a2,Frederick Tate,perezantonio@example.com,,1966-10-27,True,2023-08-29
+80c4b320-7d77-4cb8-a2db-5a0f8079007f,Thomas Bradley, jason76@example.net,Female,1970-09-29,4741,2023-02-16
+bb6f750f-472d-455e-98fe-ce4efe112e9a,David Hoffman,julie69@example.com,m,1964-02-26,5977,15/06/2023
+6953ed4e-d1d3-468b-9107-8cb2f7c1c7b4,Brenda Snyder PhD,hernandezernest@example.net,female,1968-03-31,True,"Jan 21, 2025"
+54f4cccc-13dc-4ef1-9711-68e78f2f02d0,James Ferrell,tasha01@example.net,Female,1999-09-24,N/A,21/10/2024
+a45b6a9c-fe26-48e4-9a7c-5dbd6222c3e6,Patricia Peterson,ryan70@example.net,male,1999-02-14,True,23/08/2023
+2c417464-cc62-4555-b3ad-b444a0e1223b,Pamela Romero,harrellkenneth@example.net,Female,1974-01-25,N/A,10/02/2025
+4d3198b1-cbde-44e9-a275-b349b5667a97,James Martin,georgetracy@example.org,male,2002-09-29,5155,"Jan 24, 2024"
+ac3573de-2ee0-47a3-a46c-0a3d39365412,Sandra Parker,allenashley@example.org,female,1945-05-07,7517,02/08/2024
+fc6657e8-a404-4b7b-8c79-6cea837e4586,Vanessa Patel,davidalvarez@example.net,male,1950-10-04,True,"Aug 25, 2023"
+df7ce6a9-015c-4cbc-af95-5c7ddc2378c1,Lisa Brandt,jenniferross@example.net,f,1983-09-29,3593,"Feb 10, 2024"
+9e3cb004-b5b7-4397-ab88-f782f57918cc,Joseph Martinez,calebsmith@example.net,,1955-03-07,1796,"Jan 09, 2025"
+b081710d-b888-4367-ba6c-075bfa814b79,Benjamin Welch,carlosjohnson@example.com,male,1944-05-05,N/A,15/09/2024
+47a647eb-02c0-4a41-a1e7-11e1db91164a,Michael Lewis,jenniferkhan@example.net,f,1971-09-08,9064,"Jul 22, 2023"
+7b34abb0-002a-43f4-920b-98931253f97e,Rhonda Lee,hopkinsmichael@example.com,male,1971-04-20,True,02/10/2022
+5c8b6ab4-bba1-4664-bf4a-d85db72a989a,Victoria Garcia,zchandler@example.org,m,1956-06-10,True,"May 03, 2023"
+9bdd5bb1-0e8f-4e08-b95d-6e7acad63c83,Jerry Henderson,steven17@example.net,Female,1946-03-08,8317,"Sep 26, 2022"
+11d4f2d1-27ce-45fe-89f6-0c6d7e3878fa,Kimberly Smith,housemelinda@example.org,male,1967-03-06,3258,02/08/2024
+9428f031-b2e3-44ed-9b2b-2fedc103a17b,Dr. Steven Martin,gallowayjoseph@example.com,,1958-12-06,8689,"Apr 27, 2024"
+d4e36d59-95ba-495a-a7e6-3bc0808ff8bd,Monica Logan, smoore@example.org,f,2005-06-10,5038,2022-10-08
+533f9fef-ee72-47de-a1b9-caff981e5504,Kimberly Adkins,williamsthomas@example.net,Male,1950-03-27,True,06/10/2022
+f6d21f6d-9735-4b76-929d-f4817cdbc416,Angela Lopez,leonardjoe@example.org,male,2003-08-06,2060,"Dec 10, 2024"
+9da32fd9-0f8d-4f96-a5c2-06bfbde55e42,Kristopher Harvey,ksandoval@example.net,f,1961-01-18,True,19/08/2023
+5c187fc0-85c6-491a-a29d-d80fbe805fe4,Mike Allen,panderson@example.com,,1970-08-20,True,13/11/2023
+82607b47-c0c9-4a13-a3d1-abc82bb512c4,Taylor Smith,jonesjason@example.com,f,1948-07-14,True,03/01/2024
+812bb824-849c-4d7c-b23d-d9e40f93d2b3,Sherry Wood,samueldaniels@example.com,f,1981-02-22,True,"Apr 20, 2025"
+e62d4199-e596-4ce1-86e5-6f5c4714e037,Mary Spencer,mcmillandennis@example.org,Male,2000-01-24,964,2022-12-23
+1541da5e-b9db-4e69-9569-a73016d63e32,Brittney Campbell,jenniferharris@example.net,Male,1997-07-24,8423,24/08/2023
+a632d55a-f192-4027-9fb5-501c911fb001,Danielle Odonnell,davisrodney@example.com,Female,1942-07-09,True,15/07/2022
+f26b8a1d-bca5-4264-935c-79df13801a76,Carlos Whitney,joycearnold@example.com,m,1977-09-09,3119,2022-07-25
+55f011dd-f44a-4ac1-b396-b4cd5c184302,Tony Vazquez,amydavenport@example.net,m,1977-02-13,True,2023-02-25
+dd1ebb20-fed0-4caa-bf15-33c4098d883c,Andrew Diaz,nolanjason@example.org,Male,1984-11-26,N/A,"Dec 16, 2022"
+c6691fcb-8cfc-4e10-9c65-8b9f0ca17d46,Justin Baxter,sarayoung@example.org,Female,2005-12-13,3139,"Apr 11, 2023"
+8392e6f2-fb05-439f-a11d-309420784be6,Allison Doyle,kimberly63@example.com,f,1950-05-09,7579,2025-07-03
+38671f4a-27bf-4abe-ba03-d7c0ad95105f,Shane Garrison,jamessellers@example.com,male,1960-04-15,1604,"Jun 28, 2023"
+920cf7a4-d807-4470-9f0c-843b26a87626,Matthew Ross,michelle45@example.net,Male,1974-03-09,3872,21/03/2024
+68370574-a77e-4aac-810e-6ab4d4e25b4a,Sarah Rivera,wilsontara@example.org,m,1979-01-11,960,26/08/2023
+73f6cce6-ee21-4cd6-904d-5f265649b133,Kyle Reed,samuel81 example.com,,2000-09-24,N/A,21/12/2024
+e42f28cf-11ca-49a9-8ec4-28d973247d44,Andrew Graham,michaeljones@example.net,,2002-03-06,True,"Dec 04, 2023"
+0bfeb5c8-49df-4347-bf2f-70130ec62d10,Mary Martinez,william65@example.com,Female,1986-12-19,True,"Oct 12, 2023"
+ff474f31-4f18-47d3-9869-87e3bde370d2,Cheryl Ortega,lbyrd@example.net,Male,1978-04-01,True,20/10/2023
+5ea0a41e-29c9-4a08-9c3a-4d85eba3263f,Roy Torres,russellcarpenter@example.net,Female,1961-06-13,True,2024-07-01
+3a43cce4-b236-4f79-ab58-68741869ebc8,Michael Dixon, donnacampbell@example.net,Male,1982-08-04,N/A,2025-02-25
+55c3ec42-c618-4ca0-b26a-bdec2f8268e0,Robert Potter,jeffrey32@example.org,male,1942-08-31,9740,"Jul 25, 2023"
+f4529151-1a77-4d08-ad60-5d344cd5dba0,Miss Patricia Gibson,jennifercruz example.com,male,1956-02-15,N/A,24/02/2023
+79587b0c-e1af-4f0c-9118-8f1b0af25e5a,Abigail Potter,osbornejeffery@example.net,Female,1974-10-07,N/A,2024-06-30
+dcf0fa3e-7ba6-45ee-91fb-dbab0c7c4c56,David Charles,danderson@example.net,f,1975-08-31,1188,24/11/2024
+e04c5a9d-f151-4ae4-a59d-03886be15dd9,Tiffany Vance,jrivas@example.com,Male,2000-07-29,True,2023-03-14
+ea74cf51-08a5-4307-ada3-96342028ed5e,Karen Green, maryramirez@example.net,f,1972-06-30,1127,09/03/2025
+1848856b-9647-4731-bff6-443ffaeb0e45,Jeremiah Reeves,josephflores@example.net,male,1945-01-01,True,"Feb 09, 2023"
+15181dc7-b1cb-44a7-9093-31107bd7ffaf,James Hernandez,calebrussell@example.net,male,1971-03-24,True,2024-04-15
+3ad61d29-17ac-4857-8fc7-464b06e3b983,Ross Price, gateskathy@example.com,Male,1971-12-24,True,"Jul 19, 2022"
+dbc3210b-1a2d-4005-9ecd-a84a5588c1f0,Elizabeth Price,vmedina@example.net,Female,1993-12-13,5617,"Feb 01, 2025"
+82623ab8-0df8-4e80-a5b6-9bb389086724,Katherine Nelson,vjohnson@example.net,m,1985-09-26,4114,2024-03-29
+52839bda-251a-4e03-bbe6-6d8f225920f7,Sara Calhoun,meadowsbrittany@example.net,Male,1941-05-13,N/A,2022-11-17
+2f4a84f4-5216-47a5-8436-e20333631f86,Brandy Murray,greenmark@example.com,female,1961-10-05,True,"Dec 16, 2023"
+b0b56cc6-3b56-4253-a2ae-922da488b06c,Jamie Walton, fking@example.com,Male,1940-11-02,True,2024-10-24
+0bd758e0-b5c9-42ff-8a81-18ffe12d89c2,Trevor Walker,harringtondenise@example.org,Female,2004-02-21,7041,2023-07-29
+71cbedb6-bfb2-4d0c-9d47-06ffc6f2f7a1,Alex Hernandez,thomaswilson@example.org,,1971-03-02,N/A,2025-06-30
+08ef5dfe-3608-458b-86e0-fbd5aaf5b467,Jacob Obrien,stricklandfrank@example.com,f,1946-11-16,N/A,"Dec 24, 2024"
+69872f66-e1b9-4d09-ba57-9f7885705c17,Eric Byrd,tsanders@example.org,Female,1944-09-09,2662,14/01/2025
+66a182e0-5902-4c1b-99eb-d12f4a92e2ae,Lori Garcia,melissa91 example.net,f,1992-10-11,True,"Sep 11, 2022"
+92ded563-8092-471d-a7d6-5e473d375ea7,Jeffrey Wood,alexander67@example.org,,1969-01-08,N/A,2024-01-23
+db1b67b8-0a4d-451e-b206-39b8983fa783,Sandra Zimmerman,hthompson@example.net,,1957-11-24,N/A,20/02/2025
+e06ba029-bbec-4045-b9e2-24246b29996e,Kimberly Webb,lpetersen@example.com,Female,1961-06-14,True,2023-07-26
+270efa16-c76f-4c3d-8465-e0af219cd9a2,Angelica Keith,karenhudson@example.net,Male,1965-04-23,N/A,"Dec 14, 2023"
+52a9cd7a-8c27-42ee-906c-9207a4ec1f1c,Samuel White,michaelgreen@example.com,,1999-06-05,N/A,2025-01-21
+ce60843f-adcc-475a-b3b6-4bbaa7cefd3a,Desiree Smith,christophercortez@example.com,Female,1977-04-19,N/A,2023-07-18
+d3200a80-a42f-43fd-8580-fcae85f0245f,Maria Henry,davisjeffrey@example.net,female,1956-01-29,N/A,"Oct 28, 2023"
+16fe7355-7342-417e-b880-f95fb38ce6fc,Jackie Tran, ronald85@example.com,male,1987-05-08,N/A,2024-06-13
+71fe5dcf-50ce-4e59-bc94-7db7febed7df,David Martinez, leslienewton@example.net,,1952-02-13,True,"May 03, 2023"
+61ff75ba-1c7b-41fa-a031-2536e15a11e1,John Hardy,tina34@example.org,Female,1964-01-29,N/A,2023-04-14
+f4460eda-9439-4d52-828d-ab4f6c379dbf,Michael Martinez,mccannangela@example.net,male,2003-10-07,True,2023-01-22
+fb421189-d8fe-4e95-ae9f-897b179fc9ab,Nicole Garcia,andrewstaylor@example.com,f,1962-09-15,N/A,22/04/2023
+22eb013b-686c-4613-a0fc-b1a70b443dc9,Dawn Hensley,shortrichard@example.org,Female,1978-10-14,True,13/03/2025
+194724c2-fb70-4509-8390-90b756dc90dc,Brittany Shepherd,christopher31@example.net,male,1991-07-17,N/A,16/04/2024
+d76ccf48-6eca-40f1-b0a2-1bd6756417f3,Rachel Perez, chayes@example.com,f,1998-01-20,N/A,"Jan 09, 2025"
+a07fe685-ec69-4c3f-b188-1ba16fed7029,Elizabeth Oliver DDS,mezajared@example.org,m,1957-07-12,True,2025-04-30
+1e9a5a52-8466-45a8-b8da-76cb7e1ce384,David Arnold,aaronhayes@example.net,,1971-07-01,True,2023-10-05
+bab41252-9e70-4684-9343-e8ded221d5f6,Dwayne Campbell,ojones@example.com,male,1993-02-17,5491,2025-03-06
+80f3b449-a80e-4301-a532-d4754f18983e,Regina Gonzalez,stephensdeborah@example.com,Female,1995-10-10,2414,2023-02-15
+0fd7db70-4e37-4421-ba17-9fad3b25c23e,Christopher Parker,scott74@example.net,,1966-11-29,N/A,05/09/2023
+ea41bd81-9bce-41de-bada-121187c7a61b,Katherine Miller,prestonjessica@example.net,female,1956-07-22,N/A,19/08/2022
+e109c0f4-56d6-4d1a-bfe0-b56137fdd173,Vernon Huff,keyemily@example.com,Male,1978-09-25,N/A,2022-09-10
+9d6ff2d6-c2e4-4bc3-ab73-e8ce4bf68f66,Casey Stone,lmoon@example.net,male,1969-03-07,7611,"Mar 22, 2025"
+aa4b4405-83f0-4d66-98f5-7ff4c3d40874,Tracy Harrison,qcook@example.org,m,1997-11-21,N/A,"Mar 16, 2023"
+4fe5c7b9-0e56-44f9-bdb5-4523fae9e7fe,Michael Roberts,jcervantes@example.org,f,1970-06-21,True,"Nov 23, 2022"
+93d948d9-ac67-4c11-8512-37d1a20622cb,Frank Cordova,ahancock@example.net,male,1998-09-06,7305,"Oct 29, 2024"
+3c54ef3a-52b0-444c-8012-5d22ccf0fdab,Anthony Stone,wgarrett@example.org,,1953-05-16,True,28/08/2023
+39b23925-8f87-4738-92f9-aaa2d45cf3aa,Tanya Kim,omartinez@example.net,female,1993-11-30,N/A,16/07/2023
+adf976c2-31c7-40bb-a10a-4b09f2e5092b,Emily Smith,hdavis example.com,f,2003-12-20,N/A,"Jan 08, 2023"
+ef9028f8-0443-4f20-a432-b3f72a4caabf,Brittany Cantu,william46 example.com,m,2006-03-24,True,2024-07-12
+a75d5d74-b6b5-4c4a-af43-d477d447df92,Frederick T4te,perezantonio@example.com,,1966-10-27,True,2023-08-29
+4baf4d56-d33b-4921-9b92-7e419501cc4f,Abig4il Potter,osbornejeffery@example.net,Female,1974-10-07,N/A,2024-06-30
+e3aab66f-252c-4700-8f7e-0be847a33ae4,Miss P4trici4 Gibson,jennifercruz example.com,male,1956-02-15,N/A,24/02/2023
+c4b523fb-6b38-475e-bb85-459b67cf6b15,Sh4ne G4rrison,jamessellers@example.com,male,1960-04-15,1604,"Jun 28, 2023"
+18ee6c8b-980f-4f53-9a08-04ee6a24784c,Lori G4rci4,melissa91 example.net,f,1992-10-11,True,"Sep 11, 2022"
