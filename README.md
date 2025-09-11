@@ -66,11 +66,20 @@ This project demostrates an end-to-end analytics solution covering data engineer
 
 ## How to Run
 Step 1: Clone this repo
+```
+git clone https://github.com/jenniferwxe/mega-mart.git
+cd mega-mart
+```
+Step 2: Create a virtual environment
+```
+python3 -m venv venv
+venv\Scripts\active
+```
+Step 3: Install dependencies
+``` pip install -r requirements.txt ```
+Step 4: Generate raw data
 ``` ```
-Step 2: Install dependencies
-``` ```
-Step 3: Generate raw data
-``` ```
+
 
 ## Author
 Jennifer Wang
