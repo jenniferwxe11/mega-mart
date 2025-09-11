@@ -209,8 +209,6 @@ __marimo__/
 # Credentials
 .key
 .json
-.yaml
-.yml
 
 # Data
 .csv
