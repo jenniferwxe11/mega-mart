@@ -1,4 +1,4 @@
-# MegaMart Analytics Project
+# Mega Mart Analytics Project
 
 ## Overview
 MegaMart is a simulated omnichannel retailer in Singapore, offering a wide range of products including electronics, fashion, groceries, and home goods. The company operates through 50 physical stores and an e-commerce platform. Frequent marketing campaigns (email, SMS, push notifications) are run with A/B testing to optimize conversion and retention.
