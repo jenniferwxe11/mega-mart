@@ -72,7 +72,7 @@ cd mega-mart
 ```
 Step 2: Create a virtual environment
 ```
-python3 -m venv venv
+python -m venv venv
 venv\Scripts\active
 ```
 Step 3: Install dependencies
@@ -81,6 +81,10 @@ pip install -r requirements.txt
 ```
 Step 4: Generate raw data
 ``` ```
+Full Singapore Geospatial GEOJSON is required:
+1. Download from https://data.gov.sg/datasets/d_4765db0e87b9c86336792efe8a1f7a66/view
+2. Save under data_generation/raw_data
+3. Rename it singapore_areas.geojson
 
 
 ## Author
