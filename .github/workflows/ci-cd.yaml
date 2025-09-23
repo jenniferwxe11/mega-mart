@@ -38,7 +38,7 @@ jobs:
       run: pytest tests/
 
     - name: Run DBT compile
-      run: dbt compile
+      run: dbt compile --profiles-dir ./dbt_profiles
 
   deploy-dbt-docs:
     runs-on: ubuntu-latest
