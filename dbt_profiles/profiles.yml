@@ -5,6 +5,7 @@ megamart:
       type: bigquery
       method: service-account
       project: mega-mart-storage
+      gsc_bucket: mega-mart
       dataset: mega_mart_dataset
       threads: 1
       timeout_seconds: 300
