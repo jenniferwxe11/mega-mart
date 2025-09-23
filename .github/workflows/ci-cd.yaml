@@ -66,3 +66,4 @@ jobs:
     - name: Deploy DBT docs
       run: |
         gsutil -m cp -r target/* gs://mega-mart/dbt_docs/
+        
