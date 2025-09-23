@@ -209,6 +209,3 @@ __marimo__/
 # Credentials
 .key
 .json
-
-# Data
-.csv
