@@ -47,10 +47,6 @@ jobs:
         workload_identity_provider: projects/594876062374/locations/global/workloadIdentityPools/mega-mart-pool/providers/github
         service_account: mega-mart-service@mega-mart-storage.iam.gserviceaccount.com
 
-    - name: Export ADC for dbt
-      run: |
-        gcloud auth application-default login --access-token-file <(gcloud auth print-access-token)
-
     - name: Run DBT compile
       run: dbt compile --profiles-dir ./dbt_profiles
 
