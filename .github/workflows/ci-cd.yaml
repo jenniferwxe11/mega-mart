@@ -52,9 +52,13 @@ jobs:
     - name: Google Auth
       uses: google-github-actions/auth@v2
       with:
-        token_format: 'access_token'
+        token_format: 'json'
         workload_identity_provider: projects/594876062374/locations/global/workloadIdentityPools/mega-mart-pool/providers/github
         service_account: mega-mart-service@mega-mart-storage.iam.gserviceaccount.com
+    
+    - name: Debug env
+      run: env | grep GOOGLE_APPLICATION_CREDENTIALS
+
 
     - name: Install dependencies
       run: |
