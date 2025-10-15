@@ -47,11 +47,12 @@ jobs:
 
     steps:
     - name: Checkout repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Google Auth
-      uses: google-github-actions/auth@v0
+      uses: google-github-actions/auth@v2
       with:
+        token_format: 'access_token'
         workload_identity_provider: projects/594876062374/locations/global/workloadIdentityPools/mega-mart-pool/providers/github
         service_account: mega-mart-service@mega-mart-storage.iam.gserviceaccount.com
 
