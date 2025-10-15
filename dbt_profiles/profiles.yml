@@ -9,3 +9,4 @@ megamart:
       threads: 1
       timeout_seconds: 300
       location: asia-southeast1
+      keyfile_json: ${{ steps.auth.outputs.credentials_json }}

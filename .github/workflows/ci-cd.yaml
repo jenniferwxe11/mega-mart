@@ -41,6 +41,13 @@ jobs:
     - name: Run tests
       run: pytest tests/
 
+    - name: Google Auth
+      uses: google-github-actions/auth@v2
+      with:
+        token_format: 'json'
+        workload_identity_provider: projects/594876062374/locations/global/workloadIdentityPools/mega-mart-pool/providers/github
+        service_account: mega-mart-service@mega-mart-storage.iam.gserviceaccount.com
+
     - name: Run DBT compile
       run: dbt compile --profiles-dir ./dbt_profiles
 
@@ -52,13 +59,6 @@ jobs:
     steps:
     - name: Checkout repo
       uses: actions/checkout@v4
-
-    - name: Google Auth
-      uses: google-github-actions/auth@v2
-      with:
-        token_format: 'json'
-        workload_identity_provider: projects/594876062374/locations/global/workloadIdentityPools/mega-mart-pool/providers/github
-        service_account: mega-mart-service@mega-mart-storage.iam.gserviceaccount.com
 
     - name: Debug env
       run: env | grep GOOGLE_APPLICATION_CREDENTIALS
