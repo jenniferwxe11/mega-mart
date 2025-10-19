@@ -76,6 +76,11 @@ jobs:
     - name: Generate DBT docs
       run: dbt docs generate --profiles-dir ./dbt_profiles
 
+    - name: Authenticate gsutil
+      run: |
+        gcloud auth activate-service-account --key-file="$GOOGLE_APPLICATION_CREDENTIALS"
+        gcloud config set project mega-mart-storage
+
     - name: Deploy DBT docs
       run: |
         gsutil -m cp -r target/* gs://mega-mart/dbt_docs/
