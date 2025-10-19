@@ -76,9 +76,9 @@ python3 -m venv venv
 venv\Scripts\active
 ```
 Step 3: Install dependencies
-``` 
+```
 pip install -r requirements.txt
- ```
+```
 Step 4: Generate raw data
 ``` ```
 
@@ -86,4 +86,3 @@ Step 4: Generate raw data
 ## Author
 Jennifer Wang
 https://www.linkedin.com/in/jenniferwangxueer/
-

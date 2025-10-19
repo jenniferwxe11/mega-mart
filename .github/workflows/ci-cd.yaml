@@ -1,0 +1,75 @@
+name: CI/CD MegaMart
+
+on:
+  push:
+    branches:
+      # - dev
+      # - main
+      - '**'
+  pull_request:
+    branches:
+      # - dev
+      # - main
+      - '**'
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  lint-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.11
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pre-commit dbt-core dbt-bigquery
+
+    - name: Run pre-commit hooks
+      run: pre-commit run --all-files
+
+    - name: Run tests
+      run: pytest tests/
+
+    - name: Google Auth
+      uses: google-github-actions/auth@v2
+      with:
+        workload_identity_provider: projects/594876062374/locations/global/workloadIdentityPools/mega-mart-pool/providers/github
+        service_account: mega-mart-service@mega-mart-storage.iam.gserviceaccount.com
+
+    - name: Run DBT compile
+      run: dbt compile --profiles-dir ./dbt_profiles
+
+  deploy-dbt-docs:
+    runs-on: ubuntu-latest
+    needs: lint-test
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+
+    - name: Debug env
+      run: env | grep GOOGLE_APPLICATION_CREDENTIALS
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+        pip install dbt-core dbt-bigquery
+
+    - name: Generate DBT docs
+      run: dbt docs generate
+
+    - name: Deploy DBT docs
+      run: |
+        gsutil -m cp -r target/* gs://mega-mart/dbt_docs/
