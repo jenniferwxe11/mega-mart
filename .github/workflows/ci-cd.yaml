@@ -59,8 +59,14 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v4
 
-    - name: Debug env
-      run: env | grep GOOGLE_APPLICATION_CREDENTIALS
+    - name: Google Auth
+      uses: google-github-actions/auth@v2
+      with:
+        workload_identity_provider: projects/594876062374/locations/global/workloadIdentityPools/mega-mart-pool/providers/github
+        service_account: mega-mart-service@mega-mart-storage.iam.gserviceaccount.com
+
+    - name: Verify auth
+      run: gcloud auth list
 
     - name: Install dependencies
       run: |
