@@ -74,7 +74,7 @@ jobs:
         pip install dbt-core dbt-bigquery
 
     - name: Generate DBT docs
-      run: dbt docs generate
+      run: dbt docs generate --profiles-dir ./dbt_profiles
 
     - name: Deploy DBT docs
       run: |
