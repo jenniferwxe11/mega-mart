@@ -73,7 +73,11 @@ cd mega-mart
 Step 2: Create a virtual environment
 ```
 python -m venv venv
-venv\Scripts\active
+```
+Step 3: Activate virtual environment
+```
+source venv\Scripts\active # Windows
+source venv/bin/activate   # macOS/Linux 
 ```
 Step 3: Install dependencies
 ```
