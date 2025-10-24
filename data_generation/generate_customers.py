@@ -1,7 +1,4 @@
 import random
-import uuid
-from datetime import timedelta
-
 import pandas as pd
 from config import NUM_CUSTOMERS
 from faker import Faker
@@ -132,7 +129,8 @@ for i in range(1, NUM_CUSTOMERS - dirty_rows + 1):
     # Wrong email format
     if customer_type != "Retail Walk-In":
         if random.random() < 0.05:
-            email = email.replace('@','')
+            if isinstance(email, str):
+                email = email.replace('@','')
 
     customers.append({
         "customer_id": cid,
@@ -159,11 +157,12 @@ for _ in range(dirty_rows):
     cust = original_cust.copy()
     cust["customer_id"] = f"CUST{i:03d}"
     if original_cust['email'] is not None:
-        cust['email'] = cust['email'].replace('.', '_') if random.random() < 0.5 else cust['email']
-        cust['email'] = cust['email'].replace('@','') if random.random() < 0.6 else cust['email']
-        cust['email'] = cust['email'].replace('.com','') if random.random() < 0.2 else cust['email']
-        cust['email'] = cust['email'].replace('example','exanple') if random.random() < 0.4 else cust['email']
-        cust['email'] = cust['email'].replace('example','exampel') if random.random() < 0.1 else cust['email']
+        if isinstance(cust['email'], str):
+            cust['email'] = cust['email'].replace('.', '_') if random.random() < 0.5 else cust['email']
+            cust['email'] = cust['email'].replace('@','') if random.random() < 0.6 else cust['email']
+            cust['email'] = cust['email'].replace('.com','') if random.random() < 0.2 else cust['email']
+            cust['email'] = cust['email'].replace('example','exanple') if random.random() < 0.4 else cust['email']
+            cust['email'] = cust['email'].replace('example','exampel') if random.random() < 0.1 else cust['email']
     if original_cust['dob'] is not None:
         cust["dob"] = fake.date_of_birth(minimum_age = 18, maximum_age = 85) if random.random() < 0.3 else cust['dob']
     customers.append(cust)

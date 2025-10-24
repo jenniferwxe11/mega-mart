@@ -1,6 +1,4 @@
 import json
-from pathlib import Path
-
 import pandas as pd
 
 # Downloaded file
@@ -21,7 +19,7 @@ try:
         if "<th>PLN_AREA_N" in description:
             start = description.find("<td>", description.find("PLN_AREA_N")) + 4
             end = description.find("</td>", start)
-            area = description[start:end].strip().title()
+            area = description[start:end].strip().title() 
 
         if "<th>REGION_N" in description:
             start = description.find("<td>", description.find("REGION_N")) + 4
