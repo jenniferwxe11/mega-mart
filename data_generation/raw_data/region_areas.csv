@@ -1,56 +1,77 @@
 region,area
+Central,Alexandra
+North-East,Ang Mo Kio
 East,Bedok
+Central,Bishan
 West,Boon Lay
+Central,Bugis
 West,Bukit Batok
 Central,Bukit Merah
 West,Bukit Panjang
 Central,Bukit Timah
-North,Central Water Catchment
+Central,Buona Vista
 East,Changi
+East,Changi Bay
+East,Changi Business Park
+Central,City Hall
+Central,Clarke Quay
 West,Choa Chu Kang
 West,Clementi
+Central,Dhoby Ghaut
+Central,Downtown Core
+Central,Farrer Park
+Central,Geylang
+Central,HarbourFront
 North-East,Hougang
 West,Jurong East
+West,Jurong Industrial Estate
 West,Jurong West
+Central,Kallang
+West,Lakeside
+North,Lim Chu Kang
+Central,Little India
+Central,Novena
+Central,MacRitchie
+Central,Marina Bay
+Central,Marina Centre
+Central,Marina East
+Central,Marina One
+Central,Marine Parade
+Central,Marina South
+North,Mandai
+Central,Newton
+North-East,North-Eastern Islands
+Central,Orchard
+Central,Outram
+East,Paya Lebar
 East,Pasir Ris
 West,Pioneer
 North-East,Punggol
 Central,Queenstown
-North-East,Seletar
-North,Sembawang
-North-East,Sengkang
-North-East,Serangoon
-Central,Kallang
-North,Lim Chu Kang
-North-East,North-Eastern Islands
-Central,Novena
-North,Simpang
-Central,Southern Islands
-North,Sungei Kadut
-Central,Toa Payoh
-West,Tuas
-West,Western Islands
-West,Western Water Catchment
-North,Woodlands
 Central,River Valley
 Central,Rochor
+North-East,Seletar
+North-East,Seletar Aerospace Park
+North,Sembawang
+North-East,Sengkang
+North-East,Sengkang West
+North-East,Serangoon
+North-East,Serangoon Garden
 Central,Singapore River
 Central,Straits View
-East,Changi Bay
-Central,Marine Parade
-Central,Downtown Core
-Central,Marina East
-Central,Marina South
-Central,Museum
-Central,Newton
-Central,Orchard
-Central,Outram
+North,Simpang
+Central,Somerset
+North,Sungei Kadut
 East,Tampines
+East,Tampines Industrial Park
 Central,Tanglin
 West,Tengah
-North,Mandai
-Central,Bishan
-North-East,Ang Mo Kio
-Central,Geylang
-East,Paya Lebar
+Central,Tiong Bahru
+Central,Toa Payoh
+West,Tuas
+Central,Upper Bukit Timah
+West,West Coast
+East,White Sands
+North,Woodlands
+North-East,Woodleigh
 North,Yishun
