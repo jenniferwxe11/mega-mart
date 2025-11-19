@@ -1,0 +1,52 @@
+store_id,store_name,area,region,store_type
+STOR001,MegaMart Junction 8,Bishan,Central,Physical Store
+STOR002,MegaMart JEM,Jurong East,West,Physical Store
+STOR003,MegaMart The Grandstand,Bukit Timah,Central,Physical Store
+STOR004,MegaMart Hillion Mall,Bukit Panjang,West,Physical Store
+STOR005,MegaMart Blk 189 City Hall Street,City Hall,Central,Physical Store
+STOR006,MegaMart Northpoint,Yishun,North,Physical Store
+STOR007,MegaMart Westgate,Jurong East,West,Physical Store
+STOR008,MegaMart Tiong Bahru Plaza,Tiong Bahru,Central,Physical Store
+STOR009,MegaMart City Square Mall,Farrer Park,Central,Physical Store
+STOR010,MegaMart Millenia Walk,Marina Bay,Central,Physical Store
+STOR011,MegaMart The Cathay,Dhoby Ghaut,Central,Physical Store
+STOR012,MegaMart Waterway Point,Punggol,North-East,Physical Store
+STOR013,MegaMart Sun Plaza,Sembawang,North,Physical Store
+STOR014,MegaMart Suntec City,Marina Centre,Central,Physical Store
+STOR015,MegaMart Eastpoint Mall,Pasir Ris,East,Physical Store
+STOR016,MegaMart Blk 444 Sungei Kadut Street,Sungei Kadut,North,Physical Store
+STOR017,MegaMart Velocity,Novena,Central,Physical Store
+STOR018,MegaMart Bedok Mall,Bedok,East,Physical Store
+STOR019,MegaMart Causeway Point,Woodlands,North,Physical Store
+STOR020,MegaMart The Seletar Mall,Seletar,North-East,Physical Store
+STOR021,MegaMart Blk 487 Jurong Industrial Estate Street,Jurong Industrial Estate,West,Physical Store
+STOR022,MegaMart Funan Mall,City Hall,Central,Physical Store
+STOR023,MegaMart Blk 733 Changi Street,Changi,East,Physical Store
+STOR024,MegaMart Blk 470 Changi Business Park Street,Changi Business Park,East,Physical Store
+STOR025,MegaMart ION,Orchard,Central,Physical Store
+STOR026,MegaMart Lot One,Choa Chu Kang,West,Physical Store
+STOR027,MegaMart NEX,Serangoon,North-East,Physical Store
+STOR028,MegaMart Blk 987 Marina South Street,Marina South,Central,Physical Store
+STOR029,MegaMart Marina Square,Marina Bay,Central,Physical Store
+STOR030,MegaMart i12 Katong,Marine Parade,Central,Physical Store
+STOR031,MegaMart Plaza Singapura,Dhoby Ghaut,Central,Physical Store
+STOR032,MegaMart Anchorpoint,Alexandra,Central,Physical Store
+STOR033,MegaMart The Woodleigh Mall,Woodleigh,North-East,Physical Store
+STOR034,MegaMart West Coast Plaza,West Coast,West,Physical Store
+STOR035,MegaMart The Clementi Mall,Clementi,West,Physical Store
+STOR036,MegaMart Ang Mo Kio Hub,Ang Mo Kio,North-East,Physical Store
+STOR037,MegaMart Tampines Mall,Tampines,East,Physical Store
+STOR038,MegaMart Blk 755 Seletar Aerospace Park Street,Seletar Aerospace Park,North-East,Physical Store
+STOR039,MegaMart Raffles City,Downtown Core,Central,Physical Store
+STOR040,MegaMart Hougang Mall,Hougang,North-East,Physical Store
+STOR041,MegaMart VivoCity,HarbourFront,Central,Physical Store
+STOR042,MegaMart Blk 510 Tampines Street,Tampines,East,Physical Store
+STOR043,MegaMart Orchard Central,Orchard,Central,Physical Store
+STOR044,MegaMart Blk 680 Bugis Street,Bugis,Central,Physical Store
+STOR045,MegaMart Blk 422 Novena Street,Novena,Central,Physical Store
+STOR046,MegaMart Marine Parade Central,Marine Parade,Central,Physical Store
+STOR047,MegaMart UE Square,Bugis,Central,Physical Store
+STOR048,MegaMart Bugis+,Bugis,Central,Physical Store
+STOR049,MegaMart Clarke Quay Central,Clarke Quay,Central,Physical Store
+STOR050,MegaMart The Rail Mall,Upper Bukit Timah,Central,Physical Store
+STOR051,MegaMart Online,Nationwide,Nationwide,Online Website
