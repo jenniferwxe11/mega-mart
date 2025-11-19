@@ -1,0 +1,51 @@
+customer_id,customer_type,name,email,gender,dob,area,region,signup_date,loyalty_points,email_marketing_opt_in,sms_opt_in,push_notifications_opt_in,walk_in_flag
+CUST001,Retail Members,,johnsonjoshuaexample.org,,,,,2025-06-15,0.0,,,,False
+CUST002,Retail Walk-In,,,,,,,,,,,,True
+CUST003,Retail Walk-In,,,,,,,,,,,,True
+CUST004,Retail Members,,rhodespatricia@example.org,,,,,2025-09-06,0.0,,,,False
+CUST005,Online Only,Anthony Davis,anthony.davis@example.org,Female,1974-04-01,Geylang,Central,2025-05-25,0.0,False,True,True,False
+CUST006,Retail Walk-In,,,,,,,,,,,,True
+CUST007,Retail Walk-In,,,,,,,,,,,,True
+CUST008,Retail Members,,jennifermiles@example.com,,,,,2025-06-30,0.0,,,,False
+CUST009,Retail Walk-In,,,,,,,,,,,,True
+CUST010,Retail Walk-In,,,,,,,,,,,,True
+CUST011,Online Only,Bridget Pacheco,bridget.pacheco@example.org,Female,1991-06-26,Somerset,Central,2025-06-19,0.0,False,False,True,False
+CUST012,Omnichannel,Roberto Ramirez,roberto.ramirez@example.org,Female,2004-12-22,Bukit Batok,West,2025-07-21,0.0,False,False,False,False
+CUST013,Retail Walk-In,,,,,,,,,,,,True
+CUST014,Omnichannel,Christopher Davis,christopher.davis@example.com,Male,1980-12-08,Paya Lebar,East,2025-10-15,0.0,False,False,True,False
+CUST015,Retail Walk-In,,,,,,,,,,,,True
+CUST016,Retail Walk-In,,,,,,,,,,,,True
+CUST017,Retail Walk-In,,,,,,,,,,,,True
+CUST018,Retail Walk-In,,,,,,,,,,,,True
+CUST019,Retail Walk-In,,,,,,,,,,,,True
+CUST020,Retail Walk-In,,,,,,,,,,,,True
+CUST021,Retail Walk-In,,,,,,,,,,,,True
+CUST022,Retail Members,,yherrera@example.org,,,,,2025-08-30,0.0,,,,False
+CUST023,Retail Walk-In,,,,,,,,,,,,True
+CUST024,Retail Walk-In,,,,,,,,,,,,True
+CUST025,Retail Walk-In,,,,,,,,,,,,True
+CUST026,Omnichannel,Maria Montgomery,maria.montgomery@example.com,Male,1979-02-22,Geylang,Central,2025-09-26,0.0,False,False,True,False
+CUST027,Retail Members,,stanleykendra@example.org,,,,,2025-10-24,0.0,,,,False
+CUST028,Retail Members,,jamesshawn@example.com,,,,,2025-06-19,0.0,,,,False
+CUST029,Online Only,Michael Santiago,michael.santiago@example.net,Female,2003-07-30,Straits View,Central,2025-09-16,0.0,True,False,True,False
+CUST030,Omnichannel,Chelsea Jackson,chelsea.jackson@example.net,M,1956-07-13,River Valley,Central,2025-08-13,0.0,False,False,True,False
+CUST031,Retail Walk-In,,,,,,,,,,,,True
+CUST032,Retail Walk-In,,,,,,,,,,,,True
+CUST033,Retail Walk-In,,,,,,,,,,,,True
+CUST034,Retail Walk-In,,,,,,,,,,,,True
+CUST035,Online Only,Joseph Schaefer,joseph.schaefer@example.net,Male,1977-10-03,Tampines Industrial Park,East,2025-09-23,0.0,True,False,True,False
+CUST036,Retail Walk-In,,,,,,,,,,,,True
+CUST037,Retail Walk-In,,,,,,,,,,,,True
+CUST038,Retail Members,,perezantonio@example.com,,,,,2025-08-02,0.0,,,,False
+CUST039,Retail Walk-In,,,,,,,,,,,,True
+CUST040,Retail Walk-In,,,,,,,,,,,,True
+CUST041,Retail Walk-In,,,,,,,,,,,,True
+CUST042,Omnichannel,Carl Gentry,carl.gentry@example.net,Male,,West Coast,West,2025-10-28,0.0,True,False,False,False
+CUST043,Retail Walk-In,,,,,,,,,,,,True
+CUST044,Retail Members,,jason76@example.net,,,,,2025-08-12,0.0,,,,False
+CUST045,Retail Walk-In,,,,,,,,,,,,True
+CUST046,Retail Walk-In,,,,,,,,,,,,True
+CUST047,Omnichannel,Joseph Wright,joseph.wright@example.net,M,1976-07-14,Orchard,Central,2025-10-04,0.0,True,False,False,False
+CUST048,Retail Members,,zhurst@example.com,,,,,2025-06-30,0.0,,,,False
+CUST049,Retail Walk-In,,,,,,,,,,,,True
+CUST050,Retail Walk-In,,,,,,,,,,,,True
