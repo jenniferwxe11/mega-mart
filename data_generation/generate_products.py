@@ -1,4 +1,5 @@
 import random
+from typing import Optional
 
 import pandas as pd
 from config import NUM_PRODUCTS
@@ -7,10 +8,6 @@ from faker import Faker
 fake = Faker()
 Faker.seed(42)
 random.seed(42)
-
-products = []
-product_ids = []
-all_rows = []
 
 MIN_REVIEWS = 5
 MAX_REVIEWS = 20
@@ -363,6 +360,9 @@ def generate_review(product_name, category, price):
     return review
 
 
+products = []
+product_ids = []
+
 for i in range(1, NUM_PRODUCTS + 1):
     pid = f"PROD{i:03d}"
     product_ids.append(pid)
@@ -382,8 +382,9 @@ for i in range(1, NUM_PRODUCTS + 1):
         category_name = category_name.replace("a", "@").replace("o", "0")
 
     # Prices
-    selling_price = round(random.uniform(1.5, 100), 2)
-    cost_price = round(selling_price * random.uniform(0.5, 0.95), 2)
+    selling_price: Optional[float] = round(random.uniform(1.5, 100), 2)
+    if selling_price is not None:
+        cost_price = round(selling_price * random.uniform(0.5, 0.95), 2)
 
     status = random.choices(STATUS, weights=[0.85, 0.05, 0.10])[0]
 
@@ -402,7 +403,7 @@ for i in range(1, NUM_PRODUCTS + 1):
     ]
 
     for review in reviews:
-        all_rows.append(
+        products.append(
             {
                 "product_id": pid,
                 "name": name,
@@ -419,6 +420,6 @@ for i in range(1, NUM_PRODUCTS + 1):
             }
         )
 
-df = pd.DataFrame(all_rows)
+df = pd.DataFrame(products)
 df.to_csv("data_generation/raw_data/products_raw.csv", index=False)
 print("products_raw.csv file generated")
