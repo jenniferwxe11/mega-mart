@@ -1,4 +1,6 @@
 # For testing:
 NUM_CUSTOMERS = 50
+NUM_PRODUCTS = 20
 # Actual Numbers:
 # NUM_CUSTOMERS = 50000
+# NUM_PRODUCTS = 10000
