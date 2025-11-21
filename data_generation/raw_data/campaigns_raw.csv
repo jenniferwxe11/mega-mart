@@ -1,0 +1,11 @@
+campaign_id,name,channel,budget,start_date,end_date,target_segment,offer_type,discount_percentage,discount_code,free_shipping,is_ab_test,control_group_percentage,kpi_conversion_uplift_target,kpi_revenue_uplift_target,kpi_engagement_target
+CAMP001,MegaMart Flash Promotions,Email,$42400,2025-08-27,2025-09-03,New Customers,Discount,28.0,WELCOME22GD,False,True,0.1,0.106,0.078,0.155
+CAMP002,MegaMart Weekly Offer,Email,$15700,2025-05-25,2025-06-01,High Spenders,Discount,22.0,DEAL50QO,False,True,0.1,0.058,0.056,0.115
+CAMP003,MegaMart Weekly Offer,Email,$18700,2025-07-02,2025-07-09,Active Customers,Discount,29.0,MEGA11CC,False,False,0.0,0.064,0.089,0.178
+CAMP004,MegaMart Weekly Offer,SMS,$25300,2025-06-24,2025-07-01,New Customers,Free-Shipping,,,True,False,0.0,0.047,0.062,0.184
+CAMP005,MegaMart Exclusive Offer,Email,$19500,2025-09-10,2025-09-17,New Customers,Discount,8.0,WELCOME29HQ,False,False,0.0,0.063,0.104,0.156
+CAMP006,MegaMart Flash Promotions,Email,$5200,2025-09-01,2025-09-08,High Spenders,Discount,22.0,DEAL15MH,False,False,0.0,0.032,0.053,0.081
+CAMP007,MegaMart Mega Deals,SMS,$15500,2025-10-04,2025-10-11,New Customers,Free-Shipping,,,True,False,0.0,0.062,0.065,0.132
+CAMP008,MegaMart Hot Deals,SMS,$26400,2025-06-04,2025-06-11,Budget Shoppers,Free-Shipping,,,True,True,0.1,0.071,0.084,0.18
+CAMP009,MegaMart Hot Promotions,Push Notifications,$38700,2025-07-25,2025-08-01,Churn Risk Customers,Free-Shipping,,,True,True,0.1,0.052,0.076,0.149
+CAMP010,MegaMart Limited-Time Event,SMS,$41600,2025-05-26,2025-06-02,Active Customers,Free-Shipping,,,True,False,0.0,0.144,0.16,0.335
