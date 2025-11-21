@@ -47,6 +47,17 @@ for i in range(1, NUM_CUSTOMERS - dirty_rows + 1):
     push_opt_in = None
     walk_in_flag = False
 
+    target_segment = random.choice(
+        [
+            "New Customers",
+            "Active Customers",
+            "Lapsed Customers",
+            "Churn Risk Customers",
+            "High Spenders",
+            "Budget Shoppers",
+        ]
+    )
+
     # Retail walk in
     if customer_type == "Retail Walk-In":
         walk_in_flag = True
@@ -134,6 +145,7 @@ for i in range(1, NUM_CUSTOMERS - dirty_rows + 1):
             "sms_opt_in": sms_opt_in,
             "push_notifications_opt_in": push_opt_in,
             "walk_in_flag": walk_in_flag,
+            "target_segment": target_segment,
         }
     )
 
