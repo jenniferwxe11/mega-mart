@@ -1,4 +1,5 @@
 import random
+from datetime import timedelta
 from typing import Optional
 
 import pandas as pd
@@ -206,6 +207,24 @@ for i in range(1, NUM_PRODUCTS + 1):
         ["active", "discontinued", "promotion"], weights=[0.85, 0.05, 0.10]
     )[0]
 
+    promotion_type = random.choices(
+        [None, "Buy One Get One", "Discounted"], weights=[0.85, 0.05, 0.10]
+    )[0]
+
+    promotion_discount_percentage = (
+        random.randint(5, 20) if promotion_type == "Discounted" else 0
+    )
+
+    promotion_start_date = None
+    promotion_end_date = None
+    discontinuation_date = None
+
+    if status == "promotion":
+        promotion_start_date = fake.date_between(start_date="-3M", end_date="-1M")
+        promotion_end_date = promotion_start_date + timedelta(weeks=1)
+    elif status == "discontinued":
+        discontinuation_date = fake.date_between(start_date="-3M", end_date="today")
+
     # Stock labels (with inconsistencies)
     stock = random.choices(
         ["in stock", "instock", "OUT OF STOCK", None], weights=[0.7, 0.1, 0.15, 0.05]
@@ -228,6 +247,10 @@ for i in range(1, NUM_PRODUCTS + 1):
                 "selling_price": selling_price,
                 "cost_price": cost_price,
                 "status": status,
+                "promotion_type": promotion_type,
+                "promotion_start_date": promotion_start_date,
+                "promotion_end_date": promotion_end_date,
+                "discontinuation_date": discontinuation_date,
                 "stock": stock,
                 "username": review["username"],
                 "stars": review["stars"],
