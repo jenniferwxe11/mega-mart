@@ -28,6 +28,9 @@ CATEGORIES = [
     "Cleaning Supplies",
     "Rice & Noodles",
     "Breakfast Foods",
+    "Electronics & Applicances",
+    "Home & Living (Kitchenware, Storage, Bedding)",
+    "Lifestyle & Recreation (Fitness, Toys, Travel)",
 ]
 
 BRANDS = {
@@ -46,6 +49,21 @@ BRANDS = {
     "Cleaning Supplies": ["Ajax", "Mr Muscle", "Vanish"],
     "Rice & Noodles": ["Tilda", "MamyPoko", "Maggi"],
     "Breakfast Foods": ["Kellogg's", "Quaker", "Post"],
+    "Electronics & Applicances": ["Philips", "Samsung", "Xiaomi", "Dyson", "Panasonic"],
+    "Home & Living (Kitchenware, Storage, Bedding)": [
+        "IKEA",
+        "Tefal",
+        "Lock&Lock",
+        "Zojirushi",
+        "HomeBasics",
+    ],
+    "Lifestyle & Recreation (Fitness, Toys, Travel)": [
+        "Nike",
+        "Adidas",
+        "Decathlon",
+        "LEGO",
+        "Samsonite",
+    ],
 }
 
 CATEGORY_ITEMS = {
@@ -64,9 +82,43 @@ CATEGORY_ITEMS = {
     "Cleaning Supplies": ["Detergent", "Bleach", "Spray", "Scrub", "Wipes"],
     "Rice & Noodles": ["Rice", "Pasta", "Noodles", "Vermicelli", "Spaghetti"],
     "Breakfast Foods": ["Cereal", "Oats", "Granola", "Muesli", "Porridge"],
+    "Electronics & Applicances": [
+        "Headphones",
+        "Blender",
+        "Air Fryer",
+        "Smartwatch",
+        "Vacuum Cleaner",
+    ],
+    "Home & Living (Kitchenware, Storage, Bedding)": [
+        "Cookware",
+        "Food Containers",
+        "Bedsheets",
+        "Pillows",
+        "Storage Boxes",
+    ],
+    "Lifestyle & Recreation (Fitness, Toys, Travel)": [
+        "Dumbbells",
+        "Yoga Mat",
+        "Board Games",
+        "Suitcase",
+        "Sports Bottle",
+    ],
 }
 
-CATEGORY_DESCRIPTORS = {
+GLOBAL_DESCRIPTORS = {
+    "packaging": {
+        "positive": ["well-packaged", "securely packaged", "neatly packed"],
+        "neutral": ["standard packaging", "average packaging"],
+        "negative": ["loosely packaged", "damaged", "flimsy packaging"],
+    },
+    "promotion": {
+        "positive": ["good deal", "limited offer", "buy 1 get 1"],
+        "neutral": ["standard offer", "price as usual"],
+        "negative": ["expensive for value", "poor deal", "not worth the promotion"],
+    },
+}
+
+POSITIVE_CATEGORY_DESCRIPTORS = {
     "Snacks": {
         "taste": ["salty", "savory", "spicy", "sweet", "umami", "tangy"],
         "texture": ["crunchy", "crispy", "soft", "chewy", "firm", "flaky"],
@@ -127,6 +179,417 @@ CATEGORY_DESCRIPTORS = {
         "taste": ["sweet", "savory", "nutty", "fruity", "rich"],
         "texture": ["crispy", "soft", "fluffy", "smooth", "chewy"],
     },
+    "Electronics & Applicances": {
+        "performance": ["fast", "efficient", "powerful", "responsive", "smooth"],
+        "build": ["durable", "sturdy", "lightweight", "compact", "well-built"],
+        "usage": ["easy to use", "user-friendly", "intuitive", "versatile"],
+    },
+    "Home & Living (Kitchenware, Storage, Bedding)": {
+        "material": ["sturdy", "lightweight", "soft", "premium", "durable"],
+        "comfort": ["comfortable", "supportive", "cozy", "soft-touch"],
+        "design": ["minimalist", "modern", "practical", "space-saving"],
+    },
+    "Lifestyle & Recreation (Fitness, Toys, Travel)": {
+        "experience": ["engaging", "fun", "effective", "challenging", "enjoyable"],
+        "durability": ["sturdy", "long-lasting", "high-quality", "robust"],
+        "convenience": ["portable", "easy to carry", "lightweight", "travel-friendly"],
+    },
+}
+
+
+NEUTRAL_CATEGORY_DESCRIPTORS = {
+    "Snacks": {
+        "taste": ["moderate", "balanced", "ordinary", "mild", "typical"],
+        "texture": ["soft", "slightly crunchy", "standard", "average", "acceptable"],
+    },
+    "Beverages": {
+        "taste": ["average", "mild", "slightly sweet", "standard", "typical"],
+        "texture": ["light", "smooth", "watery", "average", "ordinary"],
+    },
+    "Dairy & Eggs": {
+        "taste": ["mild", "plain", "average", "acceptable", "typical"],
+        "texture": ["soft", "standard", "slightly firm", "average", "acceptable"],
+    },
+    "Frozen Food": {
+        "taste": ["bland", "typical", "standard", "moderate"],
+        "texture": ["soft", "slightly crispy", "acceptable", "frozen-like", "ordinary"],
+    },
+    "Fresh Produce": {
+        "taste": ["average", "fresh enough", "ordinary", "mild", "typical"],
+        "texture": ["firm enough", "soft", "average", "acceptable", "slightly crisp"],
+    },
+    "Household Essentials": {
+        "texture": ["standard", "soft", "average", "durable enough"],
+        "packaging": ["normal packaging", "typical", "average"],
+    },
+    "Health & Beauty": {
+        "texture": ["average", "smooth enough", "light", "acceptable"],
+        "scent": ["mild", "barely noticeable", "neutral", "ordinary"],
+    },
+    "Baby Products": {
+        "texture": ["soft enough", "acceptable", "average", "standard"],
+        "scent": ["neutral", "unscented", "mild", "ordinary"],
+    },
+    "Canned Goods": {
+        "taste": ["average", "typical", "plain", "standard"],
+        "texture": ["soft enough", "average", "acceptable", "standard"],
+    },
+    "Personal Care": {
+        "texture": ["average", "standard", "soft", "acceptable"],
+        "scent": ["neutral", "mild", "barely noticeable", "ordinary"],
+    },
+    "Meat & Seafood": {
+        "taste": ["ordinary", "mild", "standard", "average"],
+        "texture": ["acceptable", "average", "firm enough", "typical"],
+    },
+    "Bakery": {
+        "taste": ["average", "standard", "mildly sweet", "typical"],
+        "texture": ["soft", "standard", "slightly fluffy", "acceptable"],
+    },
+    "Cleaning Supplies": {
+        "texture": ["average", "standard", "smooth enough", "acceptable"],
+        "scent": ["mild", "neutral", "barely noticeable", "ordinary"],
+    },
+    "Rice & Noodles": {
+        "taste": ["average", "plain", "acceptable", "standard"],
+        "texture": ["soft enough", "average", "typical", "al dente-ish"],
+    },
+    "Breakfast Foods": {
+        "taste": ["standard", "mild", "average", "typical"],
+        "texture": ["soft", "average", "acceptable", "ordinary"],
+    },
+    "Electronics & Applicances": {
+        "performance": ["adequate", "acceptable", "standard", "satisfactory"],
+        "build": ["average", "standard", "acceptable", "adequate"],
+        "usage": ["functional", "okay", "average", "acceptable"],
+    },
+    "Home & Living (Kitchenware, Storage, Bedding)": {
+        "material": ["standard", "average", "acceptable", "functional"],
+        "comfort": ["moderate", "acceptable", "okay", "standard"],
+        "design": ["plain", "average", "standard", "functional"],
+    },
+    "Lifestyle & Recreation (Fitness, Toys, Travel)": {
+        "experience": ["okay", "average", "moderate", "standard"],
+        "durability": ["adequate", "average", "standard", "acceptable"],
+        "convenience": ["acceptable", "average", "standard", "okay"],
+    },
+}
+
+NEGATIVE_CATEGORY_DESCRIPTORS = {
+    "Snacks": {
+        "taste": ["bland", "stale", "overly salty", "too sweet", "artificial", "off"],
+        "texture": [
+            "soggy",
+            "stale",
+            "hard",
+            "chewy in a bad way",
+            "crumbly",
+            "greasy",
+        ],
+    },
+    "Beverages": {
+        "taste": ["bitter", "watery", "flat", "too sweet", "off", "unpleasant"],
+        "texture": ["thin", "watery", "foamy in a bad way", "chalky", "gritty"],
+    },
+    "Dairy & Eggs": {
+        "taste": ["bland", "sour", "rancid", "stale", "flat", "off"],
+        "texture": [
+            "runny",
+            "clumpy",
+            "watery",
+            "gritty",
+            "rubbery",
+            "dense in a bad way",
+        ],
+    },
+    "Frozen Food": {
+        "taste": ["bland", "frozen-tasting", "salty", "stale", "off", "oily"],
+        "texture": ["frozen-hard", "chewy in a bad way", "mushy", "stale", "rubbery"],
+    },
+    "Fresh Produce": {
+        "taste": ["bitter", "sour", "mealy", "watery", "off", "bland"],
+        "texture": ["wilted", "soft in a bad way", "fibrous", "mushy", "dry"],
+    },
+    "Household Essentials": {
+        "texture": ["rough", "flimsy", "cheap", "scratches easily", "fragile"],
+        "packaging": ["hard to open", "leaky", "damaged", "bulk in a bad way"],
+    },
+    "Health & Beauty": {
+        "texture": ["greasy", "sticky", "runny", "thin", "unpleasant"],
+        "scent": [
+            "strong in a bad way",
+            "chemical",
+            "artificial",
+            "off-putting",
+            "unpleasant",
+        ],
+    },
+    "Baby Products": {
+        "texture": ["rough", "scratchy", "absorbent in a bad way", "cheap"],
+        "scent": ["strong", "chemical", "off", "unpleasant"],
+    },
+    "Canned Goods": {
+        "taste": ["bland", "sour", "metallic", "too salty", "off"],
+        "texture": ["mushy", "too soft", "chunky in a bad way", "watery"],
+    },
+    "Personal Care": {
+        "texture": ["greasy", "thin", "sticky", "watery", "unpleasant"],
+        "scent": ["overpowering", "chemical", "strong", "unpleasant"],
+    },
+    "Meat & Seafood": {
+        "taste": ["gamey", "bland", "sour", "overcooked", "off"],
+        "texture": ["tough", "dry", "rubbery", "chewy in a bad way", "stringy"],
+    },
+    "Bakery": {
+        "taste": ["stale", "bland", "too sweet", "dry", "off", "flat"],
+        "texture": [
+            "dry",
+            "crumbly in a bad way",
+            "hard",
+            "dense",
+            "chewy in a bad way",
+        ],
+    },
+    "Cleaning Supplies": {
+        "texture": ["harsh", "abrasive", "slimy", "chemical", "rough"],
+        "scent": ["overpowering", "chemical", "strong", "unpleasant"],
+    },
+    "Rice & Noodles": {
+        "taste": ["bland", "starchy", "underseasoned", "overcooked", "off"],
+        "texture": ["mushy", "sticky", "too firm", "dry", "clumpy"],
+    },
+    "Breakfast Foods": {
+        "taste": ["bland", "overly sweet", "stale", "off", "mediocre"],
+        "texture": ["soggy", "dense", "rubbery", "dry", "chewy in a bad way"],
+    },
+    "Electronics & Applicances": {
+        "performance": ["slow", "laggy", "unresponsive", "inefficient", "fragile"],
+        "build": ["flimsy", "cheap", "brittle", "unstable", "fragile"],
+        "usage": ["complicated", "confusing", "frustrating", "inconvenient"],
+    },
+    "Home & Living (Kitchenware, Storage, Bedding)": {
+        "material": ["cheap", "flimsy", "rough", "low-quality", "fragile"],
+        "comfort": ["uncomfortable", "unsupportive", "hard", "scratchy", "rough"],
+        "design": ["awkward", "unattractive", "clunky", "impractical", "bulky"],
+    },
+    "Lifestyle & Recreation (Fitness, Toys, Travel)": {
+        "experience": [
+            "boring",
+            "frustrating",
+            "difficult",
+            "underwhelming",
+            "disappointing",
+        ],
+        "durability": [
+            "fragile",
+            "short-lived",
+            "poor quality",
+            "breaks easily",
+            "flimsy",
+        ],
+        "convenience": [
+            "cumbersome",
+            "heavy",
+            "inconvenient",
+            "awkward to carry",
+            "unportable",
+        ],
+    },
+}
+
+POSITIVE_DESCRIPTOR_TEMPLATES = {
+    "price": [
+        "At ${value}, I think it's worth considering.",
+        "Price-wise, ${value} seems fair for what you get.",
+        "For ${value}, this is a good deal.",
+        "Considering the quality, ${value} is reasonable.",
+        "${value} feels like a worthwhile investment.",
+        "The cost of ${value} is justified by its performance.",
+    ],
+    "taste": [
+        "The taste is quite ${value}.",
+        "I really noticed the ${value} flavor of ${product}.",
+        "Tastes ${value}, just as expected.",
+        "${product} has a ${value} flavor that's enjoyable.",
+        "Really loved the ${value} taste in this one.",
+        "The ${value} flavor is prominent and appealing.",
+        "I found the taste to be pleasantly ${value}.",
+        "${product} delivers a ${value} flavor experience.",
+    ],
+    "texture": [
+        "The texture is ${value}.",
+        "I found ${product} ${value} when using it.",
+        "Feels ${value} and pleasant to use.",
+        "Has a ${value} consistency that feels nice.",
+        "The ${value} texture really stands out.",
+        "Texture is ${value}, which I enjoyed.",
+        "Really ${value} texture overall.",
+    ],
+    "scent": [
+        "${product} smells ${value}.",
+        "The ${value} scent is noticeable.",
+        "Has a ${value} aroma that I liked.",
+        "The ${value} fragrance adds to the overall experience.",
+        "A subtle ${value} scent is present and pleasant.",
+        "${product} gives off a ${value} smell that's enjoyable.",
+        "The ${value} aroma is appealing and refreshing.",
+        "Really appreciated the ${value} scent in this product.",
+    ],
+    "performance": [
+        "Performance-wise, it's very ${value}.",
+        "It performs ${value} for its category.",
+        "Really impressed by how ${value} it is.",
+        "The ${product} is ${value} in operation.",
+        "Handles tasks in a ${value} manner.",
+    ],
+    "build": [
+        "The build quality feels ${value}.",
+        "Feels ${value} and solid in hand.",
+        "Really well-built and ${value}.",
+        "Has a ${value} construction.",
+        "${product} is sturdy and ${value}.",
+    ],
+    "usage": [
+        "Very ${value} to operate.",
+        "Found it ${value} for daily use.",
+        "Designed to be ${value}.",
+        "Using the ${product} is quite ${value}.",
+        "Offers a ${value} experience.",
+    ],
+    "material": [
+        "Made from ${value} materials.",
+        "The ${value} feel is evident.",
+        "Constructed with ${value} components.",
+        "Has a ${value} texture.",
+        "The material quality is ${value}.",
+    ],
+    "comfort": [
+        "Extremely ${value} to use.",
+        "Offers a ${value} experience.",
+        "Designed for ${value}.",
+        "The ${product} provides ${value}.",
+        "Feels ${value} during use.",
+    ],
+    "design": [
+        "Features a ${value} design.",
+        "The ${value} look is appealing.",
+        "Has a ${value} aesthetic.",
+        "The design of ${product} is quite ${value}.",
+        "Showcases a ${value} style.",
+    ],
+    "experience": [
+        "Provides an ${value} experience.",
+        "Using it was quite ${value}.",
+        "Overall, an ${value} product.",
+        "The ${product} offers an ${value} usage.",
+        "Had an ${value} time with it.",
+    ],
+    "durability": [
+        "Very ${value} over time.",
+        "Built to be ${value}.",
+        "Shows ${value} after extended use.",
+        "The ${product} is known for its ${value}.",
+        "Offers ${value} in daily wear and tear.",
+    ],
+    "convenience": [
+        "Extremely ${value} to carry around.",
+        "Designed for ${value}.",
+        "Offers ${value} in usage.",
+        "The ${product} is quite ${value}.",
+        "Provides ${value} for users.",
+    ],
+    "packaging": [
+        " The packaging was ${value}.",
+        " I liked how the item was ${value}.",
+        " Packaged ${value}, very convenient.",
+    ],
+    "promotion": [
+        " I got it during a ${value}, which was nice.",
+        " Took advantage of the ${product} ${value} deal.",
+        " Purchased it with a ${value} offer.",
+    ],
+}
+
+NEGATIVE_DESCRIPTOR_TEMPLATES = {
+    "price": [
+        "At ${value}, not worth it.",
+        "Price-wise, ${value} feels overpriced.",
+        "Too expensive at ${value} for what it offers.",
+        "Considering the quality, ${value} is not reasonable.",
+        "${value} is not a good investment.",
+    ],
+    "taste": [
+        "The taste is ${value} and disappointing.",
+        "I found ${product}'s flavor to be ${value}, not enjoyable.",
+        "Tastes ${value}, which I disliked.",
+        "${product} has a ${value} flavor that I cannot recommend.",
+    ],
+    "texture": [
+        "The texture is ${value} and unpleasant.",
+        "Found ${product} ${value} when using it. Not good.",
+        "Feels ${value} in a bad way.",
+        "Texture is ${value}, which I disliked.",
+    ],
+    "scent": [
+        "${product} smells ${value} and off-putting.",
+        "The ${value} scent is too strong or unpleasant.",
+        "Has a ${value} aroma I did not like.",
+    ],
+    "performance": [
+        "Performance-wise, it's ${value} and frustrating.",
+        "It performs ${value}, not satisfactory.",
+        "The ${product} is ${value} in operation.",
+    ],
+    "build": [
+        "The build quality is ${value} and fragile.",
+        "Feels ${value} and poorly constructed.",
+        "${product} is ${value} and cheap.",
+    ],
+    "usage": [
+        "Very ${value} to operate, frustrating to use.",
+        "Found it ${value} for daily use, not convenient.",
+        "Using ${product} is quite ${value}, disappointing.",
+    ],
+    "material": [
+        "Made from ${value} materials, low-quality.",
+        "The ${value} feel is unpleasant.",
+        "Constructed with ${value} components, feels cheap.",
+    ],
+    "comfort": [
+        "Extremely ${value} to use, uncomfortable.",
+        "Offers a ${value} experience, not pleasant.",
+        "${product} provides ${value}, disappointing.",
+    ],
+    "design": [
+        "Features a ${value} design, unattractive.",
+        "The ${value} look is unappealing.",
+        "Has a ${value} style that is impractical.",
+    ],
+    "experience": [
+        "Provides a ${value} experience, not enjoyable.",
+        "Using it was ${value}, frustrating overall.",
+        "${product} offers a ${value} usage, disappointing.",
+    ],
+    "durability": [
+        "Very ${value}, breaks easily.",
+        "Built to be ${value}, not lasting.",
+        "Shows ${value} after short use.",
+    ],
+    "convenience": [
+        "Extremely ${value} to carry around, inconvenient.",
+        "Designed for ${value}, hard to use.",
+        "${product} is ${value}, not user-friendly.",
+    ],
+    "packaging": [
+        "The packaging was ${value}, not satisfactory.",
+        "Item was ${value} packed, poorly handled.",
+        "Packaging felt ${value}, disappointing.",
+    ],
+    "promotion": [
+        "Got it during a ${value}, but not worth it.",
+        "The ${product} ${value} deal was disappointing.",
+        "Purchased with ${value}, felt like a bad deal.",
+    ],
 }
 
 STATUS = ["active", "discontinued", "promotion"]
@@ -199,76 +662,84 @@ negative_verbs = [
 ]
 
 neutral_verbs = ["found", "tried", "tested", "used", "experienced"]
-mention_types = ["none", "name", "price", "taste", "texture", "packaging", "promotion"]
+
+mention_types = [
+    "none",
+    "name",
+    "price",
+    "taste",
+    "texture",
+    "scent",
+    "performance",
+    "build",
+    "usage",
+    "material",
+    "comfort",
+    "design",
+    "experience",
+    "durability",
+    "convenience",
+    "packaging",
+    "promotion",
+]
 
 
-def generate_review(product_name, category, price):
-    sentiment = random.choices(
-        ["positive", "neutral", "negative"], weights=[0.6, 0.2, 0.2]
-    )[0]
+def generate_mention_text(mention_type, product_name, value, sentiment, price=None):
+    if sentiment == "positive" or sentiment == "neutral":
+        if mention_type in POSITIVE_DESCRIPTOR_TEMPLATES and value is not None:
+            template = random.choice(POSITIVE_DESCRIPTOR_TEMPLATES[mention_type])
+            return template.replace("${value}", str(value)).replace(
+                "${product}", product_name
+            )
+    elif sentiment == "negative":
+        if mention_type in NEGATIVE_DESCRIPTOR_TEMPLATES and value is not None:
+            template = random.choice(NEGATIVE_DESCRIPTOR_TEMPLATES[mention_type])
+            return template.replace("${value}", str(value)).replace(
+                "${product}", product_name
+            )
+    return ""
 
-    taste_options = CATEGORY_DESCRIPTORS.get(category, {}).get("taste", [])
-    texture_options = CATEGORY_DESCRIPTORS.get(category, {}).get("texture", [])
-    scent_options = CATEGORY_DESCRIPTORS.get(category, {}).get("scent", [])
-    taste = random.choice(taste_options) if taste_options else None
-    texture = random.choice(texture_options) if texture_options else None
-    scent = random.choice(scent_options) if scent_options else None
-    packaging = (
-        random.choice(["loosely packaged", "damaged", "well-packaged"])
-        if random.random() < 0.3
-        else None
+
+def generate_review(product_name, price, sentiment=None):
+    if sentiment is None:
+        sentiment = random.choices(
+            ["positive", "neutral", "negative"], weights=[0.6, 0.2, 0.2]
+        )[0]
+
+    if sentiment == "negative":
+        descriptors_pool = NEGATIVE_CATEGORY_DESCRIPTORS.get(category, {}).copy()
+    elif sentiment == "positive":
+        descriptors_pool = POSITIVE_CATEGORY_DESCRIPTORS.get(category, {}).copy()
+    elif sentiment == "neutral":
+        descriptors_pool = NEUTRAL_CATEGORY_DESCRIPTORS.get(category, {}).copy()
+
+    descriptor_values = {}
+    for d_type, options in descriptors_pool.items():
+        if options:
+            descriptor_values[d_type] = random.choice(options)
+
+    for special in ["packaging", "promotion"]:
+        if special not in descriptor_values or random.random() < 0.3:
+            descriptor_values[special] = random.choice(
+                GLOBAL_DESCRIPTORS[special].get(
+                    sentiment, GLOBAL_DESCRIPTORS[special]["neutral"]
+                )
+            )
+
+    mention_types = random.sample(
+        list(descriptor_values.keys()), k=min(2, len(descriptor_values))
     )
-    promotion = (
-        random.choice(["good deal", "buy 1 get 1", "limited offer"])
-        if random.random() < 0.2
-        else None
-    )
+    sentences = []
 
-    mention_weights = [0.4, 0.25, 0.1, 0.1, 0.05, 0.05, 0.05]
-    mention_type = random.choices(mention_types, weights=mention_weights, k=1)[0]
-    mention_text = ""
-    if mention_type == "price" and price is not None:
-        mention_text = f" At ${price}, I think it's worth considering."
-    elif mention_type == "taste" and taste is not None:
-        mention_text = random.choice(
-            [
-                f" The taste is quite {taste}.",
-                f" I really noticed the {taste} flavor of {product_name}.",
-                f" Tastes {taste}, just as expected.",
-            ]
+    for mention_type in mention_types:
+        value = descriptor_values.get(mention_type)
+        sentence = generate_mention_text(
+            mention_type, product_name, value, sentiment, price
         )
-    elif mention_type == "texture" and texture is not None:
-        mention_text = random.choice(
-            [
-                f" The texture is {texture}.",
-                f" I found {product_name} {texture} when using it.",
-                f" Feels {texture} and pleasant to use.",
-            ]
-        )
-    elif mention_type == "scent" and scent is not None:
-        mention_text = random.choice(
-            [
-                f" {product_name} smells {scent}.",
-                f" The {scent} scent is noticeable.",
-                f" Has a {scent} aroma that I liked.",
-            ]
-        )
-    elif mention_type == "packaging" and packaging is not None:
-        mention_text = random.choice(
-            [
-                f" The packaging was {packaging}.",
-                f" I liked how the item was {packaging}.",
-                f" Packaged {packaging}, very convenient.",
-            ]
-        )
-    elif mention_type == "promotion" and promotion is not None:
-        mention_text = random.choice(
-            [
-                f" I got it during a {promotion}, which was nice.",
-                f" Took advantage of the {product_name} {promotion} deal.",
-                f" Purchased it with a {promotion} offer.",
-            ]
-        )
+        if sentence:
+            sentences.append(sentence)
+
+    mention_text = " ".join(sentences)
 
     positive_templates = [
         f"{random.choice(positive_verbs).capitalize()} this product! It's {random.choice(positive_adjectives)}.{mention_text}",
@@ -398,9 +869,7 @@ for i in range(1, NUM_PRODUCTS + 1):
         selling_price = None
 
     review_count = random.randint(MIN_REVIEWS, MAX_REVIEWS)
-    reviews = [
-        generate_review(name, category_name, selling_price) for _ in range(review_count)
-    ]
+    reviews = [generate_review(name, selling_price) for _ in range(review_count)]
 
     for review in reviews:
         products.append(
