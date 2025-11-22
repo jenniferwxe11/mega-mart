@@ -2,7 +2,7 @@ import random
 from typing import Optional
 
 import pandas as pd
-from config import NUM_PRODUCTS, MIN_REVIEWS, MAX_REVIEWS
+from config import MAX_REVIEWS, MIN_REVIEWS, NUM_PRODUCTS
 from faker import Faker
 
 fake = Faker()
