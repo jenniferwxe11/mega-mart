@@ -35,7 +35,7 @@ CATEGORIES = [
     "Cleaning Supplies",
     "Rice & Noodles",
     "Breakfast Foods",
-    "Electronics & Applicances",
+    "Electronics & Appliances",
     "Home & Living (Kitchenware, Storage, Bedding)",
     "Lifestyle & Recreation (Fitness, Toys, Travel)",
 ]
@@ -56,7 +56,7 @@ BRANDS = {
     "Cleaning Supplies": ["Ajax", "Mr Muscle", "Vanish"],
     "Rice & Noodles": ["Tilda", "MamyPoko", "Maggi"],
     "Breakfast Foods": ["Kellogg's", "Quaker", "Post"],
-    "Electronics & Applicances": ["Philips", "Samsung", "Xiaomi", "Dyson", "Panasonic"],
+    "Electronics & Appliances": ["Philips", "Samsung", "Xiaomi", "Dyson", "Panasonic"],
     "Home & Living (Kitchenware, Storage, Bedding)": [
         "IKEA",
         "Tefal",
@@ -89,7 +89,7 @@ CATEGORY_ITEMS = {
     "Cleaning Supplies": ["Detergent", "Bleach", "Spray", "Scrub", "Wipes"],
     "Rice & Noodles": ["Rice", "Pasta", "Noodles", "Vermicelli", "Spaghetti"],
     "Breakfast Foods": ["Cereal", "Oats", "Granola", "Muesli", "Porridge"],
-    "Electronics & Applicances": [
+    "Electronics & Appliances": [
         "Headphones",
         "Blender",
         "Air Fryer",
@@ -186,7 +186,7 @@ POSITIVE_CATEGORY_DESCRIPTORS = {
         "taste": ["sweet", "savory", "nutty", "fruity", "rich"],
         "texture": ["crispy", "soft", "fluffy", "smooth", "chewy"],
     },
-    "Electronics & Applicances": {
+    "Electronics & Appliances": {
         "performance": ["fast", "efficient", "powerful", "responsive", "smooth"],
         "build": ["durable", "sturdy", "lightweight", "compact", "well-built"],
         "usage": ["easy to use", "user-friendly", "intuitive", "versatile"],
@@ -265,7 +265,7 @@ NEUTRAL_CATEGORY_DESCRIPTORS = {
         "taste": ["standard", "mild", "average", "typical"],
         "texture": ["soft", "average", "acceptable", "ordinary"],
     },
-    "Electronics & Applicances": {
+    "Electronics & Appliances": {
         "performance": ["adequate", "acceptable", "standard", "satisfactory"],
         "build": ["average", "standard", "acceptable", "adequate"],
         "usage": ["functional", "okay", "average", "acceptable"],
@@ -369,7 +369,7 @@ NEGATIVE_CATEGORY_DESCRIPTORS = {
         "taste": ["bland", "overly sweet", "stale", "off", "mediocre"],
         "texture": ["soggy", "dense", "rubbery", "dry", "chewy in a bad way"],
     },
-    "Electronics & Applicances": {
+    "Electronics & Appliances": {
         "performance": ["slow", "laggy", "unresponsive", "inefficient", "fragile"],
         "build": ["flimsy", "cheap", "brittle", "unstable", "fragile"],
         "usage": ["complicated", "confusing", "frustrating", "inconvenient"],
