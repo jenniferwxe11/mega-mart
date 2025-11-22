@@ -2,15 +2,12 @@ import random
 from typing import Optional
 
 import pandas as pd
-from config import NUM_PRODUCTS
+from config import NUM_PRODUCTS, MIN_REVIEWS, MAX_REVIEWS
 from faker import Faker
 
 fake = Faker()
 Faker.seed(42)
 random.seed(42)
-
-MIN_REVIEWS = 5
-MAX_REVIEWS = 20
 
 CATEGORIES = [
     "Snacks",
