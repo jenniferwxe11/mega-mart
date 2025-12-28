@@ -7,6 +7,11 @@ customers_df = pd.read_csv("data_generation/raw_data/customers_raw.csv")
 customers_df.loc[:, "signup_date"] = pd.to_datetime(
     customers_df["signup_date"], errors="coerce"
 )
+# only choose customer types from online only and omnichannel
+customers_df = customers_df[
+    customers_df["customer_type"].isin(["Online Only", "Omnichannel"])
+]
+
 campaigns_df = pd.read_csv("data_generation/raw_data/campaigns_raw.csv")
 campaigns_df.loc[:, "start_date"] = pd.to_datetime(
     campaigns_df["start_date"], errors="coerce"
@@ -15,8 +20,10 @@ campaigns_df.loc[:, "is_ab_test"] = campaigns_df["is_ab_test"].astype(bool)
 
 for _, campaign in campaigns_df.iterrows():
     eligible_customers = customers_df[
-        customers_df["signup_date"] <= campaign["start_date"]
+        (customers_df["signup_date"] <= campaign["start_date"])
+        & (customers_df["segment"] == campaign["target_segment"])
     ]
+
     target_audience_size = AUDIENCE_PERCENTAGE * len(eligible_customers)
     target_audience = eligible_customers.sample(n=target_audience_size, random_state=42)
 
