@@ -211,9 +211,11 @@ for i in range(1, NUM_PRODUCTS + 1):
         [None, "Buy One Get One", "Discounted"], weights=[0.85, 0.05, 0.10]
     )[0]
 
-    promotion_discount_percentage = (
-        random.randint(5, 20) if promotion_type == "Discounted" else 0
-    )
+    promotion_discount_percentage = None
+    if promotion_type == "Discounted":
+        promotion_discount_percentage = random.randint(5, 20)
+    elif promotion_type == "Buy One Get One":
+        promotion_discount_percentage = 50
 
     promotion_start_date = None
     promotion_end_date = None
