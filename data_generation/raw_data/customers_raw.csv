@@ -1,51 +1,101 @@
-customer_id,customer_type,name,email,gender,dob,area,region,signup_date,loyalty_points,email_marketing_opt_in,sms_opt_in,push_notifications_opt_in,walk_in_flag
-CUST001,Retail Members,,johnsonjoshuaexample.org,,,,,2025-06-15,0.0,,,,False
-CUST002,Retail Walk-In,,,,,,,,,,,,True
-CUST003,Retail Walk-In,,,,,,,,,,,,True
-CUST004,Retail Members,,rhodespatricia@example.org,,,,,2025-09-06,0.0,,,,False
-CUST005,Online Only,Anthony Davis,anthony.davis@example.org,Female,1974-04-01,Geylang,Central,2025-05-25,0.0,False,True,True,False
-CUST006,Retail Walk-In,,,,,,,,,,,,True
-CUST007,Retail Walk-In,,,,,,,,,,,,True
-CUST008,Retail Members,,jennifermiles@example.com,,,,,2025-06-30,0.0,,,,False
-CUST009,Retail Walk-In,,,,,,,,,,,,True
-CUST010,Retail Walk-In,,,,,,,,,,,,True
-CUST011,Online Only,Bridget Pacheco,bridget.pacheco@example.org,Female,1991-06-26,Somerset,Central,2025-06-19,0.0,False,False,True,False
-CUST012,Omnichannel,Roberto Ramirez,roberto.ramirez@example.org,Female,2004-12-22,Bukit Batok,West,2025-07-21,0.0,False,False,False,False
-CUST013,Retail Walk-In,,,,,,,,,,,,True
-CUST014,Omnichannel,Christopher Davis,christopher.davis@example.com,Male,1980-12-08,Paya Lebar,East,2025-10-15,0.0,False,False,True,False
-CUST015,Retail Walk-In,,,,,,,,,,,,True
-CUST016,Retail Walk-In,,,,,,,,,,,,True
-CUST017,Retail Walk-In,,,,,,,,,,,,True
-CUST018,Retail Walk-In,,,,,,,,,,,,True
-CUST019,Retail Walk-In,,,,,,,,,,,,True
-CUST020,Retail Walk-In,,,,,,,,,,,,True
-CUST021,Retail Walk-In,,,,,,,,,,,,True
-CUST022,Retail Members,,yherrera@example.org,,,,,2025-08-30,0.0,,,,False
-CUST023,Retail Walk-In,,,,,,,,,,,,True
-CUST024,Retail Walk-In,,,,,,,,,,,,True
-CUST025,Retail Walk-In,,,,,,,,,,,,True
-CUST026,Omnichannel,Maria Montgomery,maria.montgomery@example.com,Male,1979-02-22,Geylang,Central,2025-09-26,0.0,False,False,True,False
-CUST027,Retail Members,,stanleykendra@example.org,,,,,2025-10-24,0.0,,,,False
-CUST028,Retail Members,,jamesshawn@example.com,,,,,2025-06-19,0.0,,,,False
-CUST029,Online Only,Michael Santiago,michael.santiago@example.net,Female,2003-07-30,Straits View,Central,2025-09-16,0.0,True,False,True,False
-CUST030,Omnichannel,Chelsea Jackson,chelsea.jackson@example.net,M,1956-07-13,River Valley,Central,2025-08-13,0.0,False,False,True,False
-CUST031,Retail Walk-In,,,,,,,,,,,,True
-CUST032,Retail Walk-In,,,,,,,,,,,,True
-CUST033,Retail Walk-In,,,,,,,,,,,,True
-CUST034,Retail Walk-In,,,,,,,,,,,,True
-CUST035,Online Only,Joseph Schaefer,joseph.schaefer@example.net,Male,1977-10-03,Tampines Industrial Park,East,2025-09-23,0.0,True,False,True,False
-CUST036,Retail Walk-In,,,,,,,,,,,,True
-CUST037,Retail Walk-In,,,,,,,,,,,,True
-CUST038,Retail Members,,perezantonio@example.com,,,,,2025-08-02,0.0,,,,False
-CUST039,Retail Walk-In,,,,,,,,,,,,True
-CUST040,Retail Walk-In,,,,,,,,,,,,True
-CUST041,Retail Walk-In,,,,,,,,,,,,True
-CUST042,Omnichannel,Carl Gentry,carl.gentry@example.net,Male,,West Coast,West,2025-10-28,0.0,True,False,False,False
-CUST043,Retail Walk-In,,,,,,,,,,,,True
-CUST044,Retail Members,,jason76@example.net,,,,,2025-08-12,0.0,,,,False
-CUST045,Retail Walk-In,,,,,,,,,,,,True
-CUST046,Retail Walk-In,,,,,,,,,,,,True
-CUST047,Omnichannel,Joseph Wright,joseph.wright@example.net,M,1976-07-14,Orchard,Central,2025-10-04,0.0,True,False,False,False
-CUST048,Retail Members,,zhurst@example.com,,,,,2025-06-30,0.0,,,,False
-CUST049,Retail Walk-In,,,,,,,,,,,,True
-CUST050,Retail Walk-In,,,,,,,,,,,,True
+customer_id,customer_type,name,email,gender,dob,area,region,signup_date,loyalty_points,email_marketing_opt_in,sms_opt_in,push_notifications_opt_in,walk_in_flag,segment
+CUST001,Retail Members,,johnsonjoshua@example.org,,,,,2024-05-24,0.0,,,,False,New Customers
+CUST002,Retail Members,,jillrhodes@example.net,,,,,2024-01-03,0.0,,,,False,Active Customers
+CUST003,Retail Walk-In,,,,,,,,,,,,True,New Customers
+CUST004,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST005,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST006,Retail Walk-In,,,,,,,,,,,,True,High Spenders
+CUST007,Retail Walk-In,,,,,,,,,,,,True,High Spenders
+CUST008,Retail Members,,garzaanthony@example.org,,,,,2024-12-11,0.0,,,,False,Active Customers
+CUST009,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST010,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST011,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST012,Retail Walk-In,,,,,,,,,,,,True,Budget Shoppers
+CUST013,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST014,Retail Members,,jesseguzmanexample.net,,,,,2024-04-03,0.0,,,,False,High Spenders
+CUST015,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST016,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST017,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST018,Retail Members,,jennifermiles@example.com,,,,,2024-05-09,0.0,,,,False,Active Customers
+CUST019,Retail Members,,shaneramirez@example.org,,,,,2024-09-08,0.0,,,,False,New Customers
+CUST020,Retail Walk-In,,,,,,,,,,,,True,Budget Shoppers
+CUST021,Retail Members,,helenpeterson@example.org,,,,,2024-11-25,0.0,,,,False,Active Customers
+CUST022,Online Only,Jason Gallagher,jason.gallagher@example.org,Male,1946-04-18,Canberra,North,2024-12-19,0.0,False,False,False,False,High Spenders
+CUST023,Omnichannel,Colin Abbott,colin.abbott@example.net,Female,1957-12-22,Kovan,North-East,2024-05-19,0.0,False,False,True,False,Active Customers
+CUST024,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST025,Online Only,Bradley Stevens,bradley.stevens@example.org,Female,2006-02-28,Clarke Quay,Central,2024-10-20,0.0,True,False,False,False,High Spenders
+CUST026,Omnichannel,Nicholas Arnold,nicholas.arnold@example.net,Female,1982-01-18,Sungei Kadut,North,2024-09-09,0.0,False,False,True,False,High Spenders
+CUST027,Retail Walk-In,,,,,,,,,,,,True,Churn Risk Customers
+CUST028,Retail Members,,barbara10@example.net,,,,,2024-08-04,0.0,,,,False,Budget Shoppers
+CUST029,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST030,Retail Members,,kendragalloway@example.org,,,,,2024-09-25,0.0,,,,False,New Customers
+CUST031,Omnichannel,Michelle James,michelle.james@example.com,Male,1983-03-20,Marina South,Central,2024-12-26,0.0,False,True,False,False,Active Customers
+CUST032,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST033,Retail Walk-In,,,,,,,,,,,,True,Churn Risk Customers
+CUST034,Online Only,Michael Wood,michael.wood@example.org,Male,1985-07-24,Tiong Bahru,Central,2024-06-28,0.0,False,False,False,False,New Customers
+CUST035,Retail Members,,lynchgeorge@example.net,,,,,2024-10-12,0.0,,,,False,Churn Risk Customers
+CUST036,Retail Walk-In,,,,,,,,,,,,True,New Customers
+CUST037,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST038,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST039,Retail Walk-In,,,,,,,,,,,,True,New Customers
+CUST040,Retail Members,,frankgray@example.net,,,,,2024-12-03,0.0,,,,False,Active Customers
+CUST041,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST042,Retail Walk-In,,,,,,,,,,,,True,Churn Risk Customers
+CUST043,Online Only,Hailey Robinson,hailey.robinson@example.com,Female,1997-04-20,Tiong Bahru,Central,2024-07-04,0.0,True,False,True,False,Active Customers
+CUST044,Retail Members,,perezantonio@example.com,,,,,,0.0,,,,False,Active Customers
+CUST045,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST046,Online Only,Richard Jones,richard.jones@example.net,Female,1999-08-01,Alexandra,Central,2024-08-09,0.0,False,False,True,False,Active Customers
+CUST047,Online Only,Leonard Rios,leonard.rios@example.com,Male,2000-02-23,Chinatown,Central,2024-01-03,0.0,False,False,True,False,New Customers
+CUST048,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST049,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST050,Omnichannel,Dawn Thomas,dawn.thomas@example.org,f,1956-10-04,Jurong West,West,2024-12-26,0.0,False,False,True,False,Active Customers
+CUST051,Omnichannel,Anna Baker,anna.baker@example.net,Male,1969-02-14,Geylang,Central,2024-09-17,0.0,False,False,True,False,Active Customers
+CUST052,Online Only,Brandy Cox,brandy.cox@example.org,Female,1974-08-21,Chinese Garden,West,2024-07-31,0.0,False,False,True,False,New Customers
+CUST053,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST054,Retail Walk-In,,,,,,,,,,,,True,Budget Shoppers
+CUST055,Retail Walk-In,,,,,,,,,,,,True,Churn Risk Customers
+CUST056,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST057,Retail Members,,camposmichelleexample.org,,,,,2024-11-03,0.0,,,,False,Active Customers
+CUST058,Retail Members,,laurahenderson@example.org,,,,,2024-09-17,0.0,,,,False,Active Customers
+CUST059,Omnichannel,Paul Carlson,paul.carlson@example.com,M,1975-12-20,Bukit Panjang,West,2024-11-23,0.0,False,False,False,False,High Spenders
+CUST060,Retail Members,,frazierdanny@example.net,,,,,2024-03-29,0.0,,,,False,Active Customers
+CUST061,Retail Walk-In,,,,,,,,,,,,True,New Customers
+CUST062,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST063,Retail Members,,kayla51@example.com,,,,,2024-10-09,0.0,,,,False,Churn Risk Customers
+CUST064,Retail Walk-In,,,,,,,,,,,,True,Budget Shoppers
+CUST065,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST066,Online Only,Ryan Chavez,ryan.chavezexample.net,Female,1999-07-19,Jurong East,West,2024-12-06,0.0,False,False,True,False,New Customers
+CUST067,Retail Walk-In,,,,,,,,,,,,True,High Spenders
+CUST068,Omnichannel,Jose Mason,jose.masonexample.org,F,1974-07-06,Novena,Central,2024-03-10,0.0,False,False,False,False,Active Customers
+CUST069,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST070,Retail Members,,harrellkenneth@example.net,,,,,2024-12-20,0.0,,,,False,Active Customers
+CUST071,Omnichannel,William Gonzalez,william.gonzalez@example.com,Female,1991-11-03,Boon Lay,West,2024-07-06,0.0,False,False,False,False,Active Customers
+CUST072,Online Only,Amber Osborne,amber.osborne@example.net,Female,2002-06-12,Redhill,Central,2024-03-28,0.0,True,False,True,False,High Spenders
+CUST073,Retail Walk-In,,,,,,,,,,,,True,High Spenders
+CUST074,Online Only,Carol Burns,carol.burns@example.org,Male,2003-03-03,Tanjong Pagar,Central,2024-06-03,0.0,False,False,False,False,Active Customers
+CUST075,Omnichannel,Natasha Decker,natasha.decker@example.com,M,1956-04-09,Tengah,West,,0.0,True,False,True,False,Active Customers
+CUST076,Retail Walk-In,,,,,,,,,,,,True,Churn Risk Customers
+CUST077,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST078,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST079,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST080,Retail Members,,nataliearroyo@example.org,,,,,2024-09-24,0.0,,,,False,New Customers
+CUST081,Retail Members,,wcabrera@example.net,,,,,2024-12-30,0.0,,,,False,New Customers
+CUST082,Retail Walk-In,,,,,,,,,,,,True,High Spenders
+CUST083,Retail Members,,davidalvarez@example.net,,,,,2024-07-13,0.0,,,,False,Active Customers
+CUST084,Retail Walk-In,,,,,,,,,,,,True,New Customers
+CUST085,Retail Members,,josephbrennan@example.com,,,,,2024-04-19,0.0,,,,False,Active Customers
+CUST086,Retail Walk-In,,,,,,,,,,,,True,New Customers
+CUST087,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST088,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST089,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST090,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST091,Omnichannel,Tamara Hickman,tamara.hickman@example.net,Female,1986-11-25,Compassvale,North-East,2024-10-11,0.0,True,False,True,False,Churn Risk Customers
+CUST092,Online Only,Jennifer Ross,jennifer.ross@example.net,Female,1984-03-07,Choa Chu Kang,West,,0.0,False,False,True,False,New Customers
+CUST093,Retail Walk-In,,,,,,,,,,,,True,Churn Risk Customers
+CUST094,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST095,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST096,Online Only,Samuel Holmes,samuel.holmes@example.org,M,1956-11-05,Kovan,North-East,2024-05-26,0.0,False,False,True,False,High Spenders
+CUST097,Retail Walk-In,,,,,,,,,,,,True,Active Customers
+CUST098,Omnichannel,Paul Carlson,paul_carlsonexample_com,M,1975-12-20,Bukit Panjang,West,2024-11-23,0.0,False,False,False,False,High Spenders
+CUST099,Retail Members,,camposmichelleexample.org,,,,,2024-11-03,0.0,,,,False,Active Customers
+CUST100,Retail Members,,helenpetersonexanple.org,,,,,2024-11-25,0.0,,,,False,Active Customers
